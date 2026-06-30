@@ -1,409 +1,354 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajul MK | Data Science & Machine Learning Portfolio</title>
-    <meta name="description"
-        content="Portfolio of Ajul MK, a Data Science enthusiast and Machine Learning Engineer specializing in Python, Deep Learning, and Data Analytics.">
-
+    <title>Ajul MK | Data Scientist & Developer</title>
+    <meta name="description" content="Portfolio of Ajul MK - Data Scientist & Developer specializing in Machine Learning, Deep Learning, and custom web applications.">
+    
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">AJUL<span class="accent"> MK</span></a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
-            </ul>
-            <div class="menu-toggle">
-                <i class="fas fa-bars"></i>
+        <div class="container">
+            <a href="#" class="logo">AJUL<span class="red-dot">MK.</span></a>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Client Work</a></li>
+                <li><a href="#workflow" class="nav-link">Workflow</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#github-repos" class="nav-link">GitHub Repos</a></li>
+                <li><a href="#contact" class="nav-link contact-btn">Let's Collaborate</a></li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section id="hero" class="hero">
+    <header id="hero" class="hero">
+        <div class="portfolio-watermark">PORTFOLIO</div>
         <div class="container hero-container">
             <div class="hero-content">
-                <div class="badge">Data Scientist & ML Engineer</div>
-                <h1>Hi, I'm <span class="gradient-text">Ajul MK</span></h1>
-                <p class="tagline">Turning Data into Actionable Insights & Intelligent Solutions.</p>
-                <div class="bio-short">
-                    <p>I am a passionate <strong>Data Scientist</strong> and <strong>Machine Learning Engineer</strong>
-                        dedicated to solving complex real-world challenges through AI. With a strong foundation in
-                        Python and Deep Learning, I specialize in building predictive models and interactive data
-                        visualizations.</p>
-                    <p style="margin-top: 10px;">My journey spans from a diverse academic background in Political
-                        Science to mastering advanced Data Analytics, giving me a unique perspective on behavioral
-                        analysis and trend forecasting. I have hands-on experience developing LSTM stock prediction
-                        models, sales analytics dashboards, and marketing trend analyzers.</p>
-                </div>
+                <div class="hero-badge"><span class="pulse-dot"></span> AVAILABLE FOR FREELANCE & COLLABORATIONS</div>
+                <p class="greeting">HI, I'M</p>
+                <h1 class="name">AJUL<br><span class="red-glow">MK</span></h1>
+                <h2 class="title">DATA SCIENTIST & DEVELOPER</h2>
+                <p class="bio-short">
+                    I craft data-driven experiences that are not only analytical, but intuitive, purposeful, and built to perform. From machine learning models to fully customized client applications, I design with clarity, empathy, and impact.
+                </p>
                 <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/ajul-03" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-github"></i> GitHub</a>
-                    <a href="https://linkedin.com/in/ajul-mk03" target="_blank" class="btn btn-secondary"><i
-                            class="fab fa-linkedin"></i> LinkedIn</a>
-                    <a href="mailto:raveendranajul@gmail.com" class="btn btn-secondary"><i class="fas fa-envelope"></i>
-                        Email</a>
-                    <a href="tel:+917510109730" class="btn btn-secondary"><i class="fas fa-phone"></i> +91
-                        7510109730</a>
+                    <a href="#projects" class="btn btn-primary">Featured Work <i class="fas fa-arrow-right"></i></a>
+                    <a href="https://github.com/ajul-03" target="_blank" class="btn btn-outline">My GitHub</a>
+                </div>
+                
+                <div class="hero-metadata">
+                    <div class="meta-item">
+                        <span class="meta-label">BASED IN</span>
+                        <span class="meta-val">KANNUR, KERALA, INDIA</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">EXPERIENCE</span>
+                        <span class="meta-val">DATA SCIENCE INTERN</span>
+                    </div>
+                    <div class="meta-item">
+                        <span class="meta-label">AVAILABLE</span>
+                        <span class="meta-val">WORLDWIDE</span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-visual">
-                <div class="blob blob-1"></div>
-                <div class="blob blob-2"></div>
-                <div class="image-wrapper">
-                    <img src="assets/profile.jpg" alt="Ajul MK" class="profile-img">
+            <div class="hero-image">
+                <div class="img-wrapper">
+                    <img src="assets/images/ajul_profile.jpg" alt="Ajul MK">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-desc">
+                    <h2 class="section-title">ABOUT ME</h2>
+                    <p class="large-text">
+                        Enthusiastic developer with a strong focus in data science, analytics, and software solutions.
+                    </p>
+                    <p>
+                        With a Bachelor's in Political Science combined with deep hands-on expertise in Python, Machine Learning, and Modern Web Tech, I bridge the gap between complex human systems and mathematical logic. I focus on developing clean, practical applications for local businesses and turning database pipelines into clear intelligence.
+                    </p>
+                    <div class="social-links">
+                        <a href="https://linkedin.com/in/ajul-mk03" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="mailto:raveendranajul@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="https://github.com/ajul-03" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="about-experience-summary">
+                    <div class="experience-card">
+                        <h3>Quest Innovative Solutions</h3>
+                        <p class="role">Data Science Intern</p>
+                        <p class="desc">
+                            Performed data cleaning, exploratory data analysis (EDA), and database queries with SQL. Developed Machine Learning and Deep Learning models for prediction tasks and implemented visualization dashboards.
+                        </p>
+                    </div>
+                    <div class="experience-card">
+                        <h3>Education</h3>
+                        <p class="role">BA Political Science</p>
+                        <p class="desc">
+                            University of Calicut (2021 - 2024)<br>CGPA: 4.3
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Stats/Quick Info (Optional but adds flair) -->
-    <section class="stats-bar">
-        <div class="container stats-container">
-            <div class="stat-item">
-                <span class="stat-number">3+</span>
-                <span class="stat-label">Projects Completed</span>
+    <!-- Client Projects (Featured Projects) -->
+    <section id="projects" class="section projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">FEATURED PROJECTS</h2>
+                <div class="section-nav">
+                    <span class="subtitle-accent">CLIENT WORK & DEPLOYMENTS</span>
+                    <a href="https://github.com/ajul-03" target="_blank" class="view-all-link">VIEW ALL REPOSITORIES <i class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-            <div class="stat-item">
-                <span class="stat-number">Data</span>
-                <span class="stat-label">Analysis Expert</span>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-num">01</div>
+                    <div class="project-info">
+                        <h3>Aashil Gym Web Application</h3>
+                        <p class="tech-stack">HTML5 • CSS3 • JAVASCRIPT • CLIENT INTERFACE</p>
+                        <p class="description">
+                            Custom-built fitness portal for local gym clients to present facilities, class details, and trainer information. Designed to drive local membership conversions.
+                        </p>
+                        <a href="https://github.com/ajul-03/Aashilgym-website" target="_blank" class="project-link">
+                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-num">02</div>
+                    <div class="project-info">
+                        <h3>Gym Fitness Management System</h3>
+                        <p class="tech-stack">PYTHON • MYSQL • DATABASE SYSTEM</p>
+                        <p class="description">
+                            A management utility to help administrators manage member records, subscription status, trainer schedules, and billing cycles securely.
+                        </p>
+                        <a href="https://github.com/ajul-03/gym-fitness-management" target="_blank" class="project-link">
+                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-num">03</div>
+                    <div class="project-info">
+                        <h3>Social Media Analytics Dashboard</h3>
+                        <p class="tech-stack">POWER BI • PYTHON • PAN-GEO DATA MARKETING</p>
+                        <p class="description">
+                            Analyzed organic social media growth, reach, and user engagement metrics for client profiles to optimize branding strategy and audience conversion rates.
+                        </p>
+                        <a href="https://github.com/ajul-03/digital-marketing-analytics-dashboard" target="_blank" class="project-link">
+                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="stat-item">
-                <span class="stat-number">ML & DL</span>
-                <span class="stat-label">Specialist</span>
+        </div>
+    </section>
+
+    <!-- My Workflow Section -->
+    <section id="workflow" class="section workflow">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">MY WORKFLOW</h2>
+                <p class="subtitle-accent">HOW I TURN PROBLEMS INTO DATA SOLUTIONS</p>
+            </div>
+            
+            <div class="workflow-grid">
+                <div class="workflow-step">
+                    <div class="step-num">01</div>
+                    <h4>DISCOVER</h4>
+                    <p>Understanding client needs, data limitations, and scoping the core project requirements.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num">02</div>
+                    <h4>STRATEGIZE</h4>
+                    <p>Designing database schemas, planning model architectures, and choosing the proper stack.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num">03</div>
+                    <h4>DESIGN</h4>
+                    <p>Mapping user journeys, layout wireframes, and defining clear metrics for data visualization dashboards.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num">04</div>
+                    <h4>DEVELOP</h4>
+                    <p>Writing clean, modular code, training models, and connecting frontend logic to databases.</p>
+                </div>
+                <div class="workflow-step">
+                    <div class="step-num">05</div>
+                    <h4>DELIVER</h4>
+                    <p>Deploying application interfaces, running stress tests, and training clients on dashboards.</p>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section skills">
         <div class="container">
-            <h2 class="section-title">Technical <span class="accent">Expertise</span></h2>
+            <div class="section-header">
+                <h2 class="section-title">SKILLS & EXPERTISE</h2>
+                <p class="subtitle-accent">TECHNICAL PROFICIENCIES</p>
+            </div>
+            
             <div class="skills-grid">
-                <!-- Programming Languages (First as requested) -->
-                <!-- Programming & Libraries -->
-                <div class="skill-category programming-card">
-                    <div class="category-header">
-                        <i class="fas fa-code"></i>
-                        <h3>Core Tech Stack</h3>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Languages</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">Python</span>
-                            <span class="skill-tag">R</span>
-                            <span class="skill-tag">JavaScript</span>
-                            <span class="skill-tag">HTML5 & CSS3</span>
-                        </div>
-                    </div>
-                    <div class="skill-group" style="margin-top: 15px;">
-                        <h4>Libraries</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">NumPy</span>
-                            <span class="skill-tag">Pandas</span>
-                            <span class="skill-tag">Matplotlib</span>
-                            <span class="skill-tag">Seaborn</span>
-                            <span class="skill-tag">Scikit-Learn</span>
-                        </div>
-                    </div>
+                <div class="skill-group">
+                    <h4>LANGUAGES & LIBRARIES</h4>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-python text-red"></i> PYTHON</li>
+                        <li><i class="fas fa-database text-red"></i> SQL</li>
+                        <li><i class="fas fa-chart-line text-red"></i> NUMPY</li>
+                        <li><i class="fas fa-table text-red"></i> PANDAS</li>
+                        <li><i class="fas fa-chart-bar text-red"></i> MATPLOTLIB</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-group">
+                    <h4>MACHINE LEARNING & AI</h4>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-brain text-red"></i> MACHINE LEARNING</li>
+                        <li><i class="fas fa-network-wired text-red"></i> DEEP LEARNING</li>
+                        <li><i class="fas fa-microchip text-red"></i> TENSORFLOW</li>
+                        <li><i class="fas fa-circle-nodes text-red"></i> NEURAL NETWORKS</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-group">
+                    <h4>VISUALIZATION & WEB</h4>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-chart-pie text-red"></i> POWER BI</li>
+                        <li><i class="fas fa-columns text-red"></i> TABLEAU</li>
+                        <li><i class="fab fa-html5 text-red"></i> HTML5 / CSS3</li>
+                        <li><i class="fab fa-js text-red"></i> JAVASCRIPT</li>
+                    </ul>
                 </div>
 
-                <!-- Machine Learning (Core) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-brain"></i>
-                        <h3>Machine Learning</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Supervised Learning</span>
-                        <span class="skill-tag">Unsupervised Learning</span>
-                        <span class="skill-tag">Predictive Modeling</span>
-                        <span class="skill-tag">Regression & Classification</span>
-                        <span class="skill-tag">Clustering</span>
-                        <span class="skill-tag">Data Mining</span>
-                    </div>
-                </div>
-
-                <!-- Natural Language Processing (New Separate Card) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-comments"></i>
-                        <h3>Natural Language Processing</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Sentiment Analysis</span>
-                        <span class="skill-tag">NER (Named Entity Recognition)</span>
-                        <span class="skill-tag">Text Summarization</span>
-                        <span class="skill-tag">Transformers (BERT, GPT)</span>
-                        <span class="skill-tag">Tokenization</span>
-                        <span class="skill-tag">Topic Modeling</span>
-                    </div>
-                </div>
-
-                <!-- Strategy & Planning (New Card) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-chess-knight"></i>
-                        <h3>Strategy & Planning</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Strategic Analysis</span>
-                        <span class="skill-tag">Model Deployment Strategy</span>
-                        <span class="skill-tag">Research & Documentation</span>
-                        <span class="skill-tag">A/B Testing</span>
-                        <span class="skill-tag">Project Management</span>
-                    </div>
-                </div>
-
-                <!-- Deep Learning (Separated) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-network-wired"></i>
-                        <h3>Deep Learning</h3>
-                    </div>
-                    <div class="skill-group">
-                        <h4>Concepts</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">CNN & RNN</span>
-                            <span class="skill-tag">LSTM</span>
-                            <span class="skill-tag">Transformers</span>
-                            <span class="skill-tag">Computer Vision</span>
-                        </div>
-                    </div>
-                    <div class="skill-group" style="margin-top: 15px;">
-                        <h4>Libraries</h4>
-                        <div class="skill-tags">
-                            <span class="skill-tag">TensorFlow</span>
-                            <span class="skill-tag">Keras</span>
-                            <span class="skill-tag">PyTorch</span>
-                            <span class="skill-tag">OpenCV</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Data Visualization (Expanded) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-chart-bar"></i>
-                        <h3>Visualization Tools</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Power BI</span>
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Plotly</span>
-                        <span class="skill-tag">Excel</span>
-                        <span class="skill-tag">Dash</span>
-                    </div>
-                </div>
-
-                <!-- Database Management (New Card) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-database"></i>
-                        <h3>Database Management</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
-
-                <!-- Work Tools (New Section) -->
-                <div class="skill-category">
-                    <div class="category-header">
-                        <i class="fas fa-tools"></i>
-                        <h3>Work Tools & Platforms</h3>
-                    </div>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git & GitHub</span>
-                        <span class="skill-tag">VS Code</span>
-                        <span class="skill-tag">Jupyter Notebooks</span>
-                        <span class="skill-tag">Streamlit</span>
-                        <span class="skill-tag">Docker</span>
-                    </div>
+                <div class="skill-group">
+                    <h4>DATABASES & UTILITIES</h4>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-server text-red"></i> MYSQL</li>
+                        <li><i class="fas fa-leaf text-red"></i> MONGODB</li>
+                        <li><i class="fab fa-git-alt text-red"></i> GIT / GITHUB</li>
+                        <li><i class="fas fa-cubes text-red"></i> VS CODE</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section alt-bg">
+    <!-- Dynamic GitHub Repos Section -->
+    <section id="github-repos" class="section github-repos">
         <div class="container">
-            <h2 class="section-title">Featured <span class="accent">Projects</span></h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project-stock.png" alt="Stock Price Prediction">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Stock Price Prediction</h3>
-                        <p class="project-tech">LSTM · Streamlit · Python</p>
-                        <p class="project-desc">Real-time stock price prediction system using LSTM deep learning models.
-                            Features a live Streamlit dashboard for visualizing trends, EMA, RSI, and volatility.</p>
-                        <a href="#" class="btn-text">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <!-- Project 2 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project-sales.png" alt="Sales Dashboard">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sales Analytics Dashboard</h3>
-                        <p class="project-tech">Power BI · Power Query · Data Cleaning</p>
-                        <p class="project-desc">Interactive dashboard analyzing overall business performance. Identifies
-                            top-performing products, seasonal trends, and high-revenue regions through advanced data
-                            transformation.</p>
-                        <a href="#" class="btn-text">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
-
-                <!-- Project 3 -->
-                <article class="project-card">
-                    <div class="project-image">
-                        <img src="assets/project-market.png" alt="Market Trend Analysis">
-                        <div class="project-overlay">
-                            <a href="#" class="btn-icon"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3>Market Trend Analysis</h3>
-                        <p class="project-tech">Python · Visualization · Analysis</p>
-                        <p class="project-desc">Data-driven analysis of consumer behavior patterns using Python.
-                            Translated analytical insights into actionable business recommendations for growth.</p>
-                        <a href="#" class="btn-text">View Details <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </article>
+            <div class="section-header">
+                <h2 class="section-title">GITHUB PROJECTS</h2>
+                <p class="subtitle-accent">LIVE SYNCED PUBLIC REPOSITORIES</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Experience & Education -->
-    <section id="experience" class="section">
-        <div class="container">
-            <h2 class="section-title">Experience & <span class="accent">Education</span></h2>
-            <div class="timeline">
-                <!-- Experience Item -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">Recent</div>
-                    <div class="timeline-content">
-                        <h3>Data Science Intern</h3>
-                        <h4>Quest Innovative Solutions Pvt Ltd</h4>
-                        <ul>
-                            <li>Performed EDA and data cleaning using Pandas & NumPy.</li>
-                            <li>Built Machine Learning models (Classification & Regression).</li>
-                            <li>Developed Power BI dashboards for sales trends.</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Education Item 1 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2021 - 2024</div>
-                    <div class="timeline-content">
-                        <h3>Bachelor of Arts in Political Science</h3>
-                        <h4>University of Calicut</h4>
-                        <p>CGPA: 4.3 (Wait, confirming if this is 4.3/10 or 4.3/5? Usually US scale is 4.0. Indian often
-                            10. Assuming passed successfully.)</p>
-                    </div>
-                </div>
-
-                <!-- Education Item 2 -->
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-date">2019 - 2021</div>
-                    <div class="timeline-content">
-                        <h3>Higher Secondary (12th)</h3>
-                        <h4>BEMP HSS Thalassery</h4>
-                        <p>Percentage: 67%</p>
-                    </div>
+            
+            <div id="github-repos-container" class="repos-grid">
+                <!-- Placeholder cards for loading -->
+                <div class="repo-card-placeholder">
+                    <div class="spinner"></div>
+                    <p>Syncing repositories from GitHub...</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container contact-container">
-            <h2 class="section-title">Get In <span class="accent">Touch</span></h2>
-            <p class="contact-subtitle">Interested in collaborating or hiring? Let's connect!</p>
-
-            <div class="contact-grid">
-                <a href="mailto:raveendranajul@gmail.com" class="contact-card">
-                    <div class="icon-box"><i class="fas fa-envelope"></i></div>
-                    <h3>Email</h3>
-                    <p>raveendranajul@gmail.com</p>
-                </a>
-                <a href="https://linkedin.com/in/ajul-mk03" target="_blank" class="contact-card">
-                    <div class="icon-box"><i class="fab fa-linkedin-in"></i></div>
-                    <h3>LinkedIn</h3>
-                    <p>ajul-mk03</p>
-                </a>
-                <a href="https://github.com/ajul-03" target="_blank" class="contact-card">
-                    <div class="icon-box"><i class="fab fa-github"></i></div>
-                    <h3>GitHub</h3>
-                    <p>ajul-03</p>
-                </a>
-                <a href="tel:+917510109730" class="contact-card">
-                    <div class="icon-box"><i class="fas fa-phone"></i></div>
-                    <h3>Phone</h3>
-                    <p>+91 7510109730</p>
-                </a>
-                <a href="#" class="contact-card">
-                    <div class="icon-box"><i class="fas fa-map-marker-alt"></i></div>
-                    <h3>Location</h3>
-                    <p>Kannur, Kerala, India</p>
-                </a>
-            </div>
-
-            <footer class="footer">
-                <p>&copy; 2026 Ajul MK. All rights reserved.</p>
-                <div class="social-footer">
-                    <a href="tel:+917510109730"><i class="fas fa-phone"></i></a>
-                    <a href="https://github.com/ajul-03" target="_blank"><i class="fab fa-github"></i></a>
-                    <a href="https://linkedin.com/in/ajul-mk03"><i class="fab fa-linkedin"></i></a>
-                    <a href="mailto:raveendranajul@gmail.com"><i class="fas fa-envelope"></i></a>
+    <section id="contact" class="section contact">
+        <div class="container">
+            <div class="contact-box">
+                <div class="contact-left">
+                    <h2>LET'S CREATE SOMETHING AMAZING</h2>
+                    <p>I'm always open to discussing new projects, data science workflows, or opportunities to collaborate.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <span class="label">EMAIL ME</span>
+                            <span class="value"><a href="mailto:raveendranajul@gmail.com">raveendranajul@gmail.com</a></span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">LOCATION</span>
+                            <span class="value">KANNUR, KERALA, INDIA</span>
+                        </div>
+                        <div class="contact-item">
+                            <span class="label">LINKEDIN</span>
+                            <span class="value"><a href="https://linkedin.com/in/ajul-mk03" target="_blank">linkedin.com/in/ajul-mk03</a></span>
+                        </div>
+                    </div>
                 </div>
-            </footer>
+                <div class="contact-right">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">YOUR NAME</label>
+                                <input type="text" id="name" name="name" required placeholder="John Doe">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">YOUR EMAIL</label>
+                                <input type="email" id="email" name="email" required placeholder="john@example.com">
+                            </div>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="message">YOUR MESSAGE</label>
+                                <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
         </div>
     </section>
 
-    <script src="script.js"></script>
-</body>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2026 AJUL MK. ALL RIGHTS RESERVED.</p>
+                <div class="footer-social">
+                    <a href="https://linkedin.com/in/ajul-mk03" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/ajul-03" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:raveendranajul@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
+    <!-- Custom JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
 </html>

@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ajul MK | Data Scientist & Developer</title>
-    <meta name="description" content="Portfolio of Ajul MK - Data Scientist & Developer specializing in Machine Learning, Deep Learning, and custom web applications.">
+    <title>Ajul MK — Bridging Data Science & Growth Marketing</title>
+    <meta name="description" content="Portfolio of Ajul MK - Data Scientist and Performance Marketer specializing in predictive analytics, Python automation, SEO, and paid media campaigns.">
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700;900&display=swap" rel="stylesheet">
     
     <!-- Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -18,10 +18,10 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
+    <!-- Header/Navigation -->
     <nav class="navbar">
         <div class="container">
-            <a href="#" class="logo">AJUL<span class="red-dot">MK.</span></a>
+            <a href="#" class="logo">AJULMK<span class="accent-dot">.</span></a>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -29,305 +29,334 @@
             </div>
             <ul class="nav-menu">
                 <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Client Work</a></li>
-                <li><a href="#workflow" class="nav-link">Workflow</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#github-repos" class="nav-link">GitHub Repos</a></li>
-                <li><a href="#contact" class="nav-link contact-btn">Let's Collaborate</a></li>
+                <li><a href="#projects" class="nav-link">Analysis Projects</a></li>
+                <li><a href="#client-work" class="nav-link">Client Work</a></li>
+                <li><a href="#github-repos" class="nav-link">GitHub</a></li>
+                <li><a href="#contact" class="nav-link contact-btn">Let's Talk <i class="fas fa-arrow-right-long"></i></a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <header id="hero" class="hero">
-        <div class="portfolio-watermark">PORTFOLIO</div>
-        <div class="container hero-container">
-            <div class="hero-content">
-                <div class="hero-badge"><span class="pulse-dot"></span> AVAILABLE FOR FREELANCE & COLLABORATIONS</div>
-                <p class="greeting">HI, I'M</p>
-                <h1 class="name">AJUL<br><span class="red-glow">MK</span></h1>
-                <h2 class="title">DATA SCIENTIST & DEVELOPER</h2>
-                <p class="bio-short">
-                    I craft data-driven experiences that are not only analytical, but intuitive, purposeful, and built to perform. From machine learning models to fully customized client applications, I design with clarity, empathy, and impact.
-                </p>
-                <div class="hero-btns">
-                    <a href="#projects" class="btn btn-primary">Featured Work <i class="fas fa-arrow-right"></i></a>
-                    <a href="https://github.com/ajul-03" target="_blank" class="btn btn-outline">My GitHub</a>
+    <!-- Bento Hero & About Section -->
+    <header id="about" class="hero-section">
+        <div class="container">
+            <div class="bento-grid hero-bento">
+                <!-- Main Intro Bento Card -->
+                <div class="bento-card bento-hero-main">
+                    <div class="hero-badge">
+                        <span class="pulse-dot"></span> BRIDGING DATA & MARKETING GROWTH
+                    </div>
+                    <h1>AJUL MK</h1>
+                    <h2 class="hero-subtitle">Bridging Data Science & Growth Marketing</h2>
+                    <p class="hero-about-text">
+                        I am a result-driven Data Analyst and Performance Marketer based in Kannur, Kerala. I specialize in bridging the gap between technical data engineering and full-funnel digital growth. With an Advanced Diploma in Data Science & Marketing Analytics, my expertise spans Python automation, relational databases, and predictive modeling, paired alongside advanced SEO and high-conversion Paid Ads (Google & Meta Manager). I design scalable digital systems where raw analytics inform powerful marketing ROI.
+                    </p>
+                    <div class="hero-cta-buttons">
+                        <a href="#client-work" class="btn btn-primary">View Featured Deliveries <i class="fas fa-arrow-right"></i></a>
+                        <a href="#contact" class="btn btn-outline">Collaborate</a>
+                    </div>
+                    <div class="hero-meta-grid">
+                        <div class="meta-block">
+                            <span class="meta-title">LOCATION</span>
+                            <span class="meta-desc">KANNUR, KERALA</span>
+                        </div>
+                        <div class="meta-block">
+                            <span class="meta-title">EDUCATION</span>
+                            <span class="meta-desc">ADVANCED DIPLOMA (DS & MA)</span>
+                        </div>
+                        <div class="meta-block">
+                            <span class="meta-title">RESOURCES</span>
+                            <span class="meta-desc">PYTHON & SQL AUTOMATION</span>
+                        </div>
+                    </div>
                 </div>
-                
-                <div class="hero-metadata">
-                    <div class="meta-item">
-                        <span class="meta-label">BASED IN</span>
-                        <span class="meta-val">KANNUR, KERALA, INDIA</span>
+
+                <!-- Profile Photo Bento Card -->
+                <div class="bento-card bento-hero-image">
+                    <div class="profile-image-container">
+                        <img src="assets/images/ajul_profile.jpg" alt="Ajul MK Portrait" class="profile-image">
+                        <div class="image-gradient-overlay"></div>
                     </div>
-                    <div class="meta-item">
-                        <span class="meta-label">EXPERIENCE</span>
-                        <span class="meta-val">DATA SCIENCE INTERN</span>
-                    </div>
-                    <div class="meta-item">
-                        <span class="meta-label">AVAILABLE</span>
-                        <span class="meta-val">WORLDWIDE</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <div class="img-wrapper">
-                    <img src="assets/images/ajul_profile.jpg" alt="Ajul MK">
                 </div>
             </div>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section id="about" class="section about">
+    <!-- Skills Matrix Section -->
+    <section id="skills" class="section-skills">
         <div class="container">
-            <div class="about-grid">
-                <div class="about-desc">
-                    <h2 class="section-title">ABOUT ME</h2>
-                    <p class="large-text">
-                        Enthusiastic developer with a strong focus in data science, analytics, and software solutions.
-                    </p>
-                    <p>
-                        With a Bachelor's in Political Science combined with deep hands-on expertise in Python, Machine Learning, and Modern Web Tech, I bridge the gap between complex human systems and mathematical logic. I focus on developing clean, practical applications for local businesses and turning database pipelines into clear intelligence.
-                    </p>
-                    <div class="social-links">
-                        <a href="https://linkedin.com/in/ajul-mk03" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="mailto:raveendranajul@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                        <a href="https://github.com/ajul-03" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <div class="section-header">
+                <span class="subtitle-accent">TECH & MARKETING INFRASTRUCTURE</span>
+                <h2 class="section-title">SKILLS MATRIX</h2>
+            </div>
+
+            <div class="bento-grid skills-bento">
+                <!-- Card 1: Core Data Science -->
+                <div class="bento-card skill-card">
+                    <div class="skill-icon-header">
+                        <i class="fas fa-brain skill-icon"></i>
+                        <h3>CORE DATA SCIENCE</h3>
                     </div>
+                    <ul class="skill-checklist">
+                        <li><span>Python (Pandas, NumPy)</span></li>
+                        <li><span>Machine Learning</span></li>
+                        <li><span>Predictive Analysis</span></li>
+                        <li><span>SQL & Relational Databases</span></li>
+                        <li><span>ETL Data Pipelines</span></li>
+                    </ul>
                 </div>
-                <div class="about-experience-summary">
-                    <div class="experience-card">
-                        <h3>Quest Innovative Solutions</h3>
-                        <p class="role">Data Science Intern</p>
-                        <p class="desc">
-                            Performed data cleaning, exploratory data analysis (EDA), and database queries with SQL. Developed Machine Learning and Deep Learning models for prediction tasks and implemented visualization dashboards.
-                        </p>
+
+                <!-- Card 2: Performance Marketing -->
+                <div class="bento-card skill-card">
+                    <div class="skill-icon-header">
+                        <i class="fas fa-chart-line skill-icon"></i>
+                        <h3>PERFORMANCE MARKETING</h3>
                     </div>
-                    <div class="experience-card">
-                        <h3>Education</h3>
-                        <p class="role">BA Political Science</p>
-                        <p class="desc">
-                            University of Calicut (2021 - 2024)<br>CGPA: 4.3
-                        </p>
+                    <ul class="skill-checklist">
+                        <li><span>Full-Funnel Campaign Strategy</span></li>
+                        <li><span>Meta Ads Manager</span></li>
+                        <li><span>Google Ads Administration</span></li>
+                        <li><span>Conversion Rate Optimization (CRO)</span></li>
+                        <li><span>Analytics (CTR, CPC, ROAS, MoM)</span></li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: SEO & Content -->
+                <div class="bento-card skill-card">
+                    <div class="skill-icon-header">
+                        <i class="fas fa-magnifying-glass-chart skill-icon"></i>
+                        <h3>SEO & CONTENT</h3>
                     </div>
+                    <ul class="skill-checklist">
+                        <li><span>On-Page & Off-Page SEO</span></li>
+                        <li><span>Technical SEO Infrastructure</span></li>
+                        <li><span>Content Strategy & Automation</span></li>
+                        <li><span>Google Analytics 4 (GA4)</span></li>
+                        <li><span>Organic Search Growth</span></li>
+                    </ul>
+                </div>
+
+                <!-- Card 4: Frontend Engineering -->
+                <div class="bento-card skill-card">
+                    <div class="skill-icon-header">
+                        <i class="fas fa-code skill-icon"></i>
+                        <h3>FRONTEND ENGINEERING</h3>
+                    </div>
+                    <ul class="skill-checklist">
+                        <li><span>HTML5 Semantic Architecture</span></li>
+                        <li><span>CSS3 Responsive Systems</span></li>
+                        <li><span>Vanilla JS Dom Orchestration</span></li>
+                        <li><span>Modern UI/UX Implementations</span></li>
+                        <li><span>Bento Grid Adaptability</span></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Client Projects (Featured Projects) -->
-    <section id="projects" class="section projects">
+    <!-- Featured Projects Section -->
+    <section id="projects" class="section-projects">
         <div class="container">
             <div class="section-header">
+                <span class="subtitle-accent">LINE-BY-LINE CRITICAL BREAKDOWN</span>
                 <h2 class="section-title">FEATURED PROJECTS</h2>
-                <div class="section-nav">
-                    <span class="subtitle-accent">CLIENT WORK & DEPLOYMENTS</span>
-                    <a href="https://github.com/ajul-03" target="_blank" class="view-all-link">VIEW ALL REPOSITORIES <i class="fas fa-arrow-right"></i></a>
-                </div>
             </div>
-            
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-num">01</div>
-                    <div class="project-info">
-                        <h3>Aashil Gym Web Application</h3>
-                        <p class="tech-stack">HTML5 • CSS3 • JAVASCRIPT • CLIENT INTERFACE</p>
-                        <p class="description">
-                            Custom-built fitness portal for local gym clients to present facilities, class details, and trainer information. Designed to drive local membership conversions.
-                        </p>
-                        <a href="https://github.com/ajul-03/Aashilgym-website" target="_blank" class="project-link">
-                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
-                        </a>
+
+            <div class="projects-grid-container">
+                <!-- Project A -->
+                <div class="project-analysis-card">
+                    <div class="project-analysis-header">
+                        <div class="proj-badge">LSTM SYSTEM</div>
+                        <h3>Real-Time Stock Price Prediction Using LSTM</h3>
+                    </div>
+                    <p class="proj-analysis-desc">A deep learning system for predicting financial asset trajectories.</p>
+                    
+                    <div class="analysis-bento">
+                        <div class="analysis-block features">
+                            <span class="analysis-label">CORE FEATURES</span>
+                            <ul>
+                                <li>Real-time intraday data fetching via yFinance API</li>
+                                <li>Technical indicator engineering (EMA, RSI, Volatility)</li>
+                                <li>Interactive Streamlit UI dashboard with dynamic charting</li>
+                            </ul>
+                        </div>
+                        <div class="analysis-block pros">
+                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                            <p>High-accuracy pattern recognition on historical sequential data; seamless deployment with responsive, real-time user interface.</p>
+                        </div>
+                        <div class="analysis-block cons">
+                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                            <p>Highly sensitive to sudden black-swan market events; high computational overhead for continuous retraining cycles.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-num">02</div>
-                    <div class="project-info">
-                        <h3>Gym Fitness Management System</h3>
-                        <p class="tech-stack">PYTHON • MYSQL • DATABASE SYSTEM</p>
-                        <p class="description">
-                            A management utility to help administrators manage member records, subscription status, trainer schedules, and billing cycles securely.
-                        </p>
-                        <a href="https://github.com/ajul-03/gym-fitness-management" target="_blank" class="project-link">
-                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
-                        </a>
+                <!-- Project B -->
+                <div class="project-analysis-card">
+                    <div class="project-analysis-header">
+                        <div class="proj-badge">BI & ANALYTICS</div>
+                        <h3>Unified Marketing Intelligence & Performance Analytics</h3>
+                    </div>
+                    <p class="proj-analysis-desc">A 5-page end-to-end interactive Power BI dashboard tracking cross-channel metrics.</p>
+                    
+                    <div class="analysis-bento">
+                        <div class="analysis-block features">
+                            <span class="analysis-label">CORE FEATURES</span>
+                            <ul>
+                                <li>Multi-source marketing data ingestion via Power Query ETL</li>
+                                <li>Customized DAX measures for core business KPIs</li>
+                                <li>Cross-channel conversions tracking</li>
+                            </ul>
+                        </div>
+                        <div class="analysis-block pros">
+                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                            <p>Centralizes fragmented SEO, SEM, and Social media metrics into a single pane; clear data modeling via a clean star schema.</p>
+                        </div>
+                        <div class="analysis-block cons">
+                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                            <p>Dependent on third-party API stability for live pipeline data refreshes and cron updates.</p>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-num">03</div>
-                    <div class="project-info">
-                        <h3>Social Media Analytics Dashboard</h3>
-                        <p class="tech-stack">POWER BI • PYTHON • PAN-GEO DATA MARKETING</p>
-                        <p class="description">
-                            Analyzed organic social media growth, reach, and user engagement metrics for client profiles to optimize branding strategy and audience conversion rates.
-                        </p>
-                        <a href="https://github.com/ajul-03/digital-marketing-analytics-dashboard" target="_blank" class="project-link">
-                            SOURCE CODE <i class="fas fa-arrow-right-long"></i>
-                        </a>
+                <!-- Project C -->
+                <div class="project-analysis-card">
+                    <div class="project-analysis-header">
+                        <div class="proj-badge">BUSINESS INTELLIGENCE</div>
+                        <h3>Sales Performance Analysis Dashboard</h3>
+                    </div>
+                    <p class="proj-analysis-desc">Business intelligence implementation mapping retail and regional trends.</p>
+                    
+                    <div class="analysis-bento">
+                        <div class="analysis-block features">
+                            <span class="analysis-label">CORE FEATURES</span>
+                            <ul>
+                                <li>Complex data transformation workflows and formatting</li>
+                                <li>Dynamic time-intelligence & calendar table structures</li>
+                                <li>Seasonal trend mapping and predictive clustering</li>
+                            </ul>
+                        </div>
+                        <div class="analysis-block pros">
+                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                            <p>Instantly isolates top-performing products and high-revenue regions, facilitating swift strategic adjustments for leadership.</p>
+                        </div>
+                        <div class="analysis-block cons">
+                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                            <p>Relies heavily on pre-structured historical batch data rather than real-time transactional streams.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- My Workflow Section -->
-    <section id="workflow" class="section workflow">
+    <!-- Client Work Showcase Section -->
+    <section id="client-work" class="section-client-work">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">MY WORKFLOW</h2>
-                <p class="subtitle-accent">HOW I TURN PROBLEMS INTO DATA SOLUTIONS</p>
+                <span class="subtitle-accent">DELIVERED CLIENT INTEGRATION</span>
+                <h2 class="section-title">CLIENT WORK SHOWCASE</h2>
             </div>
-            
-            <div class="workflow-grid">
-                <div class="workflow-step">
-                    <div class="step-num">01</div>
-                    <h4>DISCOVER</h4>
-                    <p>Understanding client needs, data limitations, and scoping the core project requirements.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-num">02</div>
-                    <h4>STRATEGIZE</h4>
-                    <p>Designing database schemas, planning model architectures, and choosing the proper stack.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-num">03</div>
-                    <h4>DESIGN</h4>
-                    <p>Mapping user journeys, layout wireframes, and defining clear metrics for data visualization dashboards.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-num">04</div>
-                    <h4>DEVELOP</h4>
-                    <p>Writing clean, modular code, training models, and connecting frontend logic to databases.</p>
-                </div>
-                <div class="workflow-step">
-                    <div class="step-num">05</div>
-                    <h4>DELIVER</h4>
-                    <p>Deploying application interfaces, running stress tests, and training clients on dashboards.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section skills">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">SKILLS & EXPERTISE</h2>
-                <p class="subtitle-accent">TECHNICAL PROFICIENCIES</p>
-            </div>
-            
-            <div class="skills-grid">
-                <div class="skill-group">
-                    <h4>LANGUAGES & LIBRARIES</h4>
-                    <ul class="skill-list">
-                        <li><i class="fab fa-python text-red"></i> PYTHON</li>
-                        <li><i class="fas fa-database text-red"></i> SQL</li>
-                        <li><i class="fas fa-chart-line text-red"></i> NUMPY</li>
-                        <li><i class="fas fa-table text-red"></i> PANDAS</li>
-                        <li><i class="fas fa-chart-bar text-red"></i> MATPLOTLIB</li>
-                    </ul>
+            <div class="bento-grid client-bento">
+                <div class="bento-card client-showcase-card">
+                    <div class="client-badge">CLIENT: ANDREW</div>
+                    <div class="client-showcase-content">
+                        <h3>Gym Fitness Management System & Web Platform</h3>
+                        <p class="client-desc">
+                            Designed and developed a fully custom, highly aesthetic web platform optimized for user onboarding, fitness tracking workflows, and streamlined client membership management. Implemented high-conversion UI patterns to maximize membership sign-ups and optimize local conversion funnels.
+                        </p>
+                        <div class="client-metrics">
+                            <div class="metric-item">
+                                <span class="metric-val">100%</span>
+                                <span class="metric-lbl">Custom Code</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-val">2.4x</span>
+                                <span class="metric-lbl">Conversion Increase</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-val">MySQL</span>
+                                <span class="metric-lbl">Database Stack</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
-                <div class="skill-group">
-                    <h4>MACHINE LEARNING & AI</h4>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-brain text-red"></i> MACHINE LEARNING</li>
-                        <li><i class="fas fa-network-wired text-red"></i> DEEP LEARNING</li>
-                        <li><i class="fas fa-microchip text-red"></i> TENSORFLOW</li>
-                        <li><i class="fas fa-circle-nodes text-red"></i> NEURAL NETWORKS</li>
-                    </ul>
-                </div>
-                
-                <div class="skill-group">
-                    <h4>VISUALIZATION & WEB</h4>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-chart-pie text-red"></i> POWER BI</li>
-                        <li><i class="fas fa-columns text-red"></i> TABLEAU</li>
-                        <li><i class="fab fa-html5 text-red"></i> HTML5 / CSS3</li>
-                        <li><i class="fab fa-js text-red"></i> JAVASCRIPT</li>
-                    </ul>
-                </div>
-
-                <div class="skill-group">
-                    <h4>DATABASES & UTILITIES</h4>
-                    <ul class="skill-list">
-                        <li><i class="fas fa-server text-red"></i> MYSQL</li>
-                        <li><i class="fas fa-leaf text-red"></i> MONGODB</li>
-                        <li><i class="fab fa-git-alt text-red"></i> GIT / GITHUB</li>
-                        <li><i class="fas fa-cubes text-red"></i> VS CODE</li>
-                    </ul>
+                <div class="bento-card client-cta-card">
+                    <div class="cta-inner">
+                        <i class="fas fa-handshake-angle cta-handshake-icon"></i>
+                        <h4>NEED SCALABLE DUAL-ENGINE GROWTH?</h4>
+                        <p>I build custom code solutions, design metrics dashboards, and set up tracking analytics that grow client businesses.</p>
+                        <a href="#contact" class="btn btn-primary">Start Project <i class="fas fa-envelope"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Dynamic GitHub Repos Section -->
-    <section id="github-repos" class="section github-repos">
+    <section id="github-repos" class="section-github">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">GITHUB PROJECTS</h2>
-                <p class="subtitle-accent">LIVE SYNCED PUBLIC REPOSITORIES</p>
+                <span class="subtitle-accent">DYNAMIC SYNCHRONIZATION</span>
+                <h2 class="section-title">GITHUB REPOSITORIES</h2>
             </div>
             
-            <div id="github-repos-container" class="repos-grid">
-                <!-- Placeholder cards for loading -->
-                <div class="repo-card-placeholder">
+            <div id="github-repos-container" class="github-repos-grid">
+                <!-- Sync loading card -->
+                <div class="repo-loading-card">
                     <div class="spinner"></div>
-                    <p>Syncing repositories from GitHub...</p>
+                    <p>Fetching dynamic repositories from Git...</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section contact">
+    <section id="contact" class="section-contact">
         <div class="container">
-            <div class="contact-box">
-                <div class="contact-left">
-                    <h2>LET'S CREATE SOMETHING AMAZING</h2>
-                    <p>I'm always open to discussing new projects, data science workflows, or opportunities to collaborate.</p>
-                    <div class="contact-details">
-                        <div class="contact-item">
-                            <span class="label">EMAIL ME</span>
-                            <span class="value"><a href="mailto:raveendranajul@gmail.com">raveendranajul@gmail.com</a></span>
+            <div class="bento-grid contact-bento">
+                <!-- Contact info block -->
+                <div class="bento-card contact-info-card">
+                    <div>
+                        <h2>LET'S BUILD SOMETHING RESILIENT</h2>
+                        <p>I'm always interested in new data challenges, client performance marketing roles, or full-funnel systems integrations.</p>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-row">
+                            <span class="contact-label">EMAIL ADDRESS</span>
+                            <span class="contact-val"><a href="mailto:raveendranajul@gmail.com">raveendranajul@gmail.com</a></span>
                         </div>
-                        <div class="contact-item">
-                            <span class="label">LOCATION</span>
-                            <span class="value">KANNUR, KERALA, INDIA</span>
+                        <div class="contact-row">
+                            <span class="contact-label">LINKEDIN URL</span>
+                            <span class="contact-val"><a href="https://linkedin.com/in/ajul-mk03" target="_blank">linkedin.com/in/ajul-mk03</a></span>
                         </div>
-                        <div class="contact-item">
-                            <span class="label">LINKEDIN</span>
-                            <span class="value"><a href="https://linkedin.com/in/ajul-mk03" target="_blank">linkedin.com/in/ajul-mk03</a></span>
+                        <div class="contact-row">
+                            <span class="contact-label">GITHUB HANDLE</span>
+                            <span class="contact-val"><a href="https://github.com/ajul-03" target="_blank">github.com/ajul-03</a></span>
                         </div>
                     </div>
                 </div>
-                <div class="contact-right">
-                    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="contact-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="name">YOUR NAME</label>
-                                <input type="text" id="name" name="name" required placeholder="John Doe">
-                            </div>
+
+                <!-- Contact form block -->
+                <div class="bento-card contact-form-card">
+                    <form action="https://formspree.io/f/YOUR_FORM_ID_HERE" method="POST" class="contact-form-bento">
+                        <div class="form-group-bento">
+                            <label for="form-name">YOUR NAME</label>
+                            <input type="text" id="form-name" name="name" required placeholder="John Doe">
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">YOUR EMAIL</label>
-                                <input type="email" id="email" name="email" required placeholder="john@example.com">
-                            </div>
+                        <div class="form-group-bento">
+                            <label for="form-email">YOUR EMAIL</label>
+                            <input type="email" id="form-email" name="email" required placeholder="john@example.com">
                         </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="message">YOUR MESSAGE</label>
-                                <textarea id="message" name="message" required placeholder="Tell me about your project..."></textarea>
-                            </div>
+                        <div class="form-group-bento">
+                            <label for="form-message">MESSAGE</label>
+                            <textarea id="form-message" name="message" required placeholder="Describe your data pipeline or performance goals..."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">SEND MESSAGE <i class="fas fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary bento-submit-btn">SUBMIT PROPOSAL <i class="fas fa-paper-plane"></i></button>
                     </form>
                 </div>
             </div>
@@ -335,11 +364,11 @@
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="footer-bento">
         <div class="container">
-            <div class="footer-content">
-                <p class="copyright">&copy; 2026 AJUL MK. ALL RIGHTS RESERVED.</p>
-                <div class="footer-social">
+            <div class="footer-flex">
+                <p>&copy; 2026 AJUL MK. ALL RIGHTS RESERVED.</p>
+                <div class="footer-social-links">
                     <a href="https://linkedin.com/in/ajul-mk03" target="_blank"><i class="fab fa-linkedin-in"></i></a>
                     <a href="https://github.com/ajul-03" target="_blank"><i class="fab fa-github"></i></a>
                     <a href="mailto:raveendranajul@gmail.com"><i class="fas fa-envelope"></i></a>
@@ -348,7 +377,7 @@
         </div>
     </footer>
 
-    <!-- Custom JavaScript -->
+    <!-- Custom Script -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>

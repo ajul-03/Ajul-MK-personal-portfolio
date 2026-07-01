@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Close menu when clicking items
+    // Close menu when clicking nav links
     document.querySelectorAll('.nav-link').forEach(link => {
         link.addEventListener('click', () => {
             if (mobileMenu && navMenu) {
@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------
-    // 2. Sticky Navbar & Scroll Effects
+    // 2. Sticky Navbar Trigger
     // ----------------------------------------------------
     const navbar = document.querySelector('.navbar');
     window.addEventListener('scroll', () => {
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            if (pageYOffset >= (sectionTop - 160)) {
+            if (pageYOffset >= (sectionTop - 180)) {
                 current = section.getAttribute('id');
             }
         });
@@ -73,17 +73,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // ----------------------------------------------------
-    // 4. Dynamic GitHub Repositories Sync
+    // 4. Dynamic GitHub Repos Sync
     // ----------------------------------------------------
     const reposContainer = document.getElementById('github-repos-container');
     const githubUsername = 'ajul-03';
 
-    // List of repositories to exclude from the dynamic list
-    // (since they are already showcased or are generic test folders)
+    // List of repositories to exclude from the dynamic bento list
+    // (since they are already featured, represent template boilerplate, or are this portfolio itself)
     const excludedRepos = [
         'Aashilgym-website',
         'gym-fitness-management',
         'digital-marketing-analytics-dashboard',
+        'Stock-price-prediction-using-LSTM-neural-networks',
+        'power-bi-sales-analysis',
         'Ajul-MK-personal-portfolio',
         'html',
         'new_project'
@@ -108,32 +110,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 !excludedRepos.includes(repo.name)
             );
 
-            // Clear loading placeholder
+            // Clear loading card
             reposContainer.innerHTML = '';
 
             if (filteredRepos.length === 0) {
                 reposContainer.innerHTML = `
-                    <div class="repo-card-placeholder">
-                        <i class="fas fa-folder-open" style="font-size: 32px;"></i>
+                    <div class="repo-loading-card">
+                        <i class="fas fa-folder-open" style="font-size: 24px; color: var(--accent-neon);"></i>
                         <p>No additional public repositories found.</p>
                     </div>
                 `;
                 return;
             }
 
-            // Render repositories
+            // Render repositories in clean bento style
             filteredRepos.forEach(repo => {
                 const repoCard = document.createElement('div');
                 repoCard.className = 'repo-card';
 
-                // Format Name (replace hyphens with spaces and capitalize)
+                // Clean name formatting
                 const displayName = repo.name
                     .replace(/-/g, ' ')
                     .replace(/_/g, ' ')
                     .toUpperCase();
 
                 const description = repo.description || 'No description provided for this repository yet.';
-                const language = repo.language || 'Code';
+                const language = repo.language || 'HTML/CSS';
                 const stars = repo.stargazers_count;
                 const forks = repo.forks_count;
 
@@ -164,14 +166,14 @@ document.addEventListener('DOMContentLoaded', () => {
         } catch (error) {
             console.error('Error fetching GitHub repos:', error);
             reposContainer.innerHTML = `
-                <div class="repo-card-placeholder">
-                    <i class="fas fa-exclamation-triangle" style="font-size: 32px; color: #ff003c;"></i>
-                    <p>Unable to sync repositories from GitHub. Please refresh or try again later.</p>
+                <div class="repo-loading-card">
+                    <i class="fas fa-exclamation-triangle" style="font-size: 24px; color: var(--accent-neon);"></i>
+                    <p>Unable to sync repositories from GitHub. Please refresh or check back later.</p>
                 </div>
             `;
         }
     }
 
-    // Initialize fetching
+    // Load repos
     fetchGitHubRepos();
 });

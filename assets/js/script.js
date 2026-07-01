@@ -86,6 +86,8 @@ document.addEventListener('DOMContentLoaded', () => {
         'digital-marketing-analytics-dashboard',
         'Stock-price-prediction-using-LSTM-neural-networks',
         'power-bi-sales-analysis',
+        'defake-sys',
+        'tm-wayz-website',
         'Ajul-MK-personal-portfolio',
         'html',
         'new_project'

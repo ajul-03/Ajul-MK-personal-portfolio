@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<!-- Vercel Deployment Force-Trigger: 2026-07-01 -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -32,7 +31,7 @@
                 <li><a href="#about" class="nav-link">About</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Analysis Projects</a></li>
-                <li><a href="#client-work" class="nav-link">Client Work</a></li>
+                <li><a href="#client-work" class="nav-link">Client Deliveries</a></li>
                 <li><a href="#github-repos" class="nav-link">GitHub</a></li>
                 <li><a href="#contact" class="nav-link contact-btn">Let's Talk <i class="fas fa-arrow-right-long"></i></a></li>
             </ul>
@@ -43,7 +42,15 @@
     <header id="about" class="hero-section">
         <div class="container">
             <div class="bento-grid hero-bento">
-                <!-- Main Intro Bento Card -->
+                <!-- Profile Photo Bento Card (Positioned Left) -->
+                <div class="bento-card bento-hero-image">
+                    <div class="profile-image-container">
+                        <img src="assets/images/ajul_profile.jpg" alt="Ajul MK Portrait" class="profile-image">
+                        <div class="image-gradient-overlay"></div>
+                    </div>
+                </div>
+
+                <!-- Main Intro Bento Card (Positioned Right) -->
                 <div class="bento-card bento-hero-main">
                     <div class="hero-badge">
                         <span class="pulse-dot"></span> BRIDGING DATA & MARKETING GROWTH
@@ -54,7 +61,7 @@
                         I am a result-driven Data Analyst and Performance Marketer based in Kannur, Kerala. I specialize in bridging the gap between technical data engineering and full-funnel digital growth. With an Advanced Diploma in Data Science & Marketing Analytics, my expertise spans Python automation, relational databases, and predictive modeling, paired alongside advanced SEO and high-conversion Paid Ads (Google & Meta Manager). I design scalable digital systems where raw analytics inform powerful marketing ROI.
                     </p>
                     <div class="hero-cta-buttons">
-                        <a href="#client-work" class="btn btn-primary">View Featured Deliveries <i class="fas fa-arrow-right"></i></a>
+                        <a href="#client-work" class="btn btn-primary">View Client Deliveries <i class="fas fa-arrow-right"></i></a>
                         <a href="#contact" class="btn btn-outline">Collaborate</a>
                     </div>
                     <div class="hero-meta-grid">
@@ -70,14 +77,6 @@
                             <span class="meta-title">RESOURCES</span>
                             <span class="meta-desc">PYTHON & SQL AUTOMATION</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Profile Photo Bento Card -->
-                <div class="bento-card bento-hero-image">
-                    <div class="profile-image-container">
-                        <img src="assets/images/ajul_profile.jpg" alt="Ajul MK Portrait" class="profile-image">
-                        <div class="image-gradient-overlay"></div>
                     </div>
                 </div>
             </div>
@@ -160,91 +159,217 @@
     <section id="projects" class="section-projects">
         <div class="container">
             <div class="section-header">
-                <span class="subtitle-accent">LINE-BY-LINE CRITICAL BREAKDOWN</span>
+                <span class="subtitle-accent">LINE-BY-LINE CRITICAL BREAKDOWN & VISUAL REPRESENTATIONS</span>
                 <h2 class="section-title">FEATURED PROJECTS</h2>
             </div>
 
             <div class="projects-grid-container">
-                <!-- Project A -->
+                <!-- Project 1 -->
                 <div class="project-analysis-card">
-                    <div class="project-analysis-header">
-                        <div class="proj-badge">LSTM SYSTEM</div>
-                        <h3>Real-Time Stock Price Prediction Using LSTM</h3>
-                    </div>
-                    <p class="proj-analysis-desc">A deep learning system for predicting financial asset trajectories.</p>
-                    
-                    <div class="analysis-bento">
-                        <div class="analysis-block features">
-                            <span class="analysis-label">CORE FEATURES</span>
-                            <ul>
-                                <li>Real-time intraday data fetching via yFinance API</li>
-                                <li>Technical indicator engineering (EMA, RSI, Volatility)</li>
-                                <li>Interactive Streamlit UI dashboard with dynamic charting</li>
-                            </ul>
+                    <div class="project-card-layout-wrapper">
+                        <!-- Project Info & Visual -->
+                        <div class="project-info-column">
+                            <div class="project-analysis-header">
+                                <div class="proj-badge">LSTM SYSTEM</div>
+                                <h3>Real-Time Stock Price Prediction Using LSTM</h3>
+                            </div>
+                            <p class="proj-analysis-desc">A deep learning system for predicting financial asset trajectories.</p>
+                            
+                            <!-- Stock Trendline Visual -->
+                            <div class="project-visual-container">
+                                <svg class="visual-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M 0 100 L 40 85 L 80 90 L 120 60 L 160 70 L 200 45 L 240 50 L 280 15" fill="none" stroke="var(--accent-neon)" stroke-width="2" stroke-linecap="round"/>
+                                    <path d="M 0 100 L 40 85 L 80 90 L 120 60 L 160 70 L 200 45 L 240 50 L 280 15 L 280 120 L 0 120 Z" fill="url(#stock-glow)" opacity="0.08"/>
+                                    <circle cx="280" cy="15" r="4" fill="var(--accent-neon)"/>
+                                    <line x1="280" y1="15" x2="280" y2="120" stroke="var(--border-color-hover)" stroke-width="1" stroke-dasharray="3,3" />
+                                    <line x1="0" y1="15" x2="300" y2="15" stroke="var(--border-color-hover)" stroke-width="0.5" stroke-dasharray="3,3" />
+                                    <line x1="0" y1="60" x2="300" y2="60" stroke="var(--border-color-hover)" stroke-width="0.5" stroke-dasharray="3,3" />
+                                    <line x1="0" y1="100" x2="300" y2="100" stroke="var(--border-color-hover)" stroke-width="0.5" stroke-dasharray="3,3" />
+                                    <defs>
+                                        <linearGradient id="stock-glow" x1="0" y1="0" x2="0" y2="1">
+                                            <stop offset="0%" stop-color="var(--accent-neon)"/>
+                                            <stop offset="100%" stop-color="transparent"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <text x="245" y="10" fill="var(--accent-neon)" font-size="7" font-family="Space Grotesk">TARGET REACHED</text>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="analysis-block pros">
-                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
-                            <p>High-accuracy pattern recognition on historical sequential data; seamless deployment with responsive, real-time user interface.</p>
-                        </div>
-                        <div class="analysis-block cons">
-                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
-                            <p>Highly sensitive to sudden black-swan market events; high computational overhead for continuous retraining cycles.</p>
+                        
+                        <!-- Analysis Bento -->
+                        <div class="analysis-bento">
+                            <div class="analysis-block features">
+                                <span class="analysis-label">CORE FEATURES</span>
+                                <ul>
+                                    <li>Real-time intraday data fetching via yFinance API</li>
+                                    <li>Technical indicator engineering (EMA, RSI, Volatility)</li>
+                                    <li>Interactive Streamlit UI dashboard with dynamic charting</li>
+                                </ul>
+                            </div>
+                            <div class="analysis-block pros">
+                                <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                                <p>High-accuracy pattern recognition on historical sequential data; seamless deployment with responsive, real-time user interface.</p>
+                            </div>
+                            <div class="analysis-block cons">
+                                <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                                <p>Highly sensitive to sudden black-swan market events; high computational overhead for continuous retraining cycles.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project B -->
+                <!-- Project 2 -->
                 <div class="project-analysis-card">
-                    <div class="project-analysis-header">
-                        <div class="proj-badge">BI & ANALYTICS</div>
-                        <h3>Unified Marketing Intelligence & Performance Analytics</h3>
-                    </div>
-                    <p class="proj-analysis-desc">A 5-page end-to-end interactive Power BI dashboard tracking cross-channel metrics.</p>
-                    
-                    <div class="analysis-bento">
-                        <div class="analysis-block features">
-                            <span class="analysis-label">CORE FEATURES</span>
-                            <ul>
-                                <li>Multi-source marketing data ingestion via Power Query ETL</li>
-                                <li>Customized DAX measures for core business KPIs</li>
-                                <li>Cross-channel conversions tracking</li>
-                            </ul>
+                    <div class="project-card-layout-wrapper">
+                        <!-- Project Info & Visual -->
+                        <div class="project-info-column">
+                            <div class="project-analysis-header">
+                                <div class="proj-badge">BI & ANALYTICS</div>
+                                <h3>Unified Marketing Intelligence & Performance Analytics</h3>
+                            </div>
+                            <p class="proj-analysis-desc">A 5-page end-to-end interactive Power BI dashboard tracking cross-channel metrics.</p>
+                            
+                            <!-- Conversion Funnel Visual -->
+                            <div class="project-visual-container">
+                                <svg class="visual-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Funnel Stages -->
+                                    <polygon points="40,10 260,10 210,35 90,35" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5"/>
+                                    <polygon points="92,38 208,38 178,65 122,65" fill="none" stroke="var(--accent-neon)" stroke-width="1.5"/>
+                                    <polygon points="124,68 176,68 156,95 144,95" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5"/>
+                                    <line x1="150" y1="95" x2="150" y2="120" stroke="var(--accent-neon)" stroke-width="1.5" stroke-dasharray="2,2"/>
+                                    <text x="142" y="5" fill="var(--text-dark)" font-size="7" font-family="Space Grotesk">IMPRESSIONS</text>
+                                    <text x="145" y="52" fill="var(--accent-neon)" font-size="8" font-family="Space Grotesk">ROAS 4.2x</text>
+                                    <text x="140" y="112" fill="var(--text-dark)" font-size="7" font-family="Space Grotesk">CONVERSIONS</text>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="analysis-block pros">
-                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
-                            <p>Centralizes fragmented SEO, SEM, and Social media metrics into a single pane; clear data modeling via a clean star schema.</p>
-                        </div>
-                        <div class="analysis-block cons">
-                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
-                            <p>Dependent on third-party API stability for live pipeline data refreshes and cron updates.</p>
+                        
+                        <!-- Analysis Bento -->
+                        <div class="analysis-bento">
+                            <div class="analysis-block features">
+                                <span class="analysis-label">CORE FEATURES</span>
+                                <ul>
+                                    <li>Multi-source marketing data ingestion via Power Query ETL</li>
+                                    <li>Customized DAX measures for core business KPIs</li>
+                                    <li>Cross-channel conversions tracking</li>
+                                </ul>
+                            </div>
+                            <div class="analysis-block pros">
+                                <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                                <p>Centralizes fragmented SEO, SEM, and Social media metrics into a single pane; clear data modeling via a clean star schema.</p>
+                            </div>
+                            <div class="analysis-block cons">
+                                <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                                <p>Dependent on third-party API stability for live pipeline data refreshes and cron updates.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Project C -->
+                <!-- Project 3 -->
                 <div class="project-analysis-card">
-                    <div class="project-analysis-header">
-                        <div class="proj-badge">BUSINESS INTELLIGENCE</div>
-                        <h3>Sales Performance Analysis Dashboard</h3>
+                    <div class="project-card-layout-wrapper">
+                        <!-- Project Info & Visual -->
+                        <div class="project-info-column">
+                            <div class="project-analysis-header">
+                                <div class="proj-badge">BUSINESS INTELLIGENCE</div>
+                                <h3>Sales Performance Analysis Dashboard</h3>
+                            </div>
+                            <p class="proj-analysis-desc">Business intelligence implementation mapping retail and regional trends.</p>
+                            
+                            <!-- Sales Bar Graph Visual -->
+                            <div class="project-visual-container">
+                                <svg class="visual-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Bar graphs -->
+                                    <rect x="20" y="70" width="16" height="30" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <rect x="50" y="50" width="16" height="50" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <rect x="80" y="30" width="16" height="70" fill="none" stroke="var(--accent-neon)" stroke-width="1.5" rx="2"/>
+                                    <rect x="110" y="45" width="16" height="55" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <rect x="140" y="20" width="16" height="80" fill="none" stroke="var(--accent-neon)" stroke-width="1.5" rx="2"/>
+                                    <rect x="170" y="60" width="16" height="40" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <rect x="200" y="10" width="16" height="90" fill="none" stroke="var(--accent-neon)" stroke-width="1.5" rx="2" opacity="0.8"/>
+                                    <rect x="230" y="40" width="16" height="60" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <rect x="260" y="25" width="16" height="75" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5" rx="2"/>
+                                    <!-- Baseline -->
+                                    <line x1="10" y1="100" x2="290" y2="100" stroke="var(--border-color-hover)" stroke-width="1"/>
+                                    <text x="195" y="5" fill="var(--accent-neon)" font-size="7" font-family="Space Grotesk">MAX REVENUE</text>
+                                </svg>
+                            </div>
+                        </div>
+                        
+                        <!-- Analysis Bento -->
+                        <div class="analysis-bento">
+                            <div class="analysis-block features">
+                                <span class="analysis-label">CORE FEATURES</span>
+                                <ul>
+                                    <li>Complex data transformation workflows and formatting</li>
+                                    <li>Dynamic time-intelligence & calendar table structures</li>
+                                    <li>Seasonal trend mapping and predictive clustering</li>
+                                </ul>
+                            </div>
+                            <div class="analysis-block pros">
+                                <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                                <p>Instantly isolates top-performing products and high-revenue regions, facilitating swift strategic adjustments for leadership.</p>
+                            </div>
+                            <div class="analysis-block cons">
+                                <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                                <p>Relies heavily on pre-structured historical batch data rather than real-time transactional streams.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="proj-analysis-desc">Business intelligence implementation mapping retail and regional trends.</p>
-                    
-                    <div class="analysis-bento">
-                        <div class="analysis-block features">
-                            <span class="analysis-label">CORE FEATURES</span>
-                            <ul>
-                                <li>Complex data transformation workflows and formatting</li>
-                                <li>Dynamic time-intelligence & calendar table structures</li>
-                                <li>Seasonal trend mapping and predictive clustering</li>
-                            </ul>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-analysis-card">
+                    <div class="project-card-layout-wrapper">
+                        <!-- Project Info & Visual -->
+                        <div class="project-info-column">
+                            <div class="project-analysis-header">
+                                <div class="proj-badge">COMPUTER VISION</div>
+                                <h3>Deepfake Detection & Analysis System</h3>
+                            </div>
+                            <p class="proj-analysis-desc">An advanced security and computer vision analytics system.</p>
+                            
+                            <!-- Digital Face Scan Wireframe Visual -->
+                            <div class="project-visual-container">
+                                <svg class="visual-svg" viewBox="0 0 300 120" xmlns="http://www.w3.org/2000/svg">
+                                    <!-- Grid lines -->
+                                    <line x1="50" y1="10" x2="250" y2="10" stroke="var(--border-color)" stroke-width="0.5"/>
+                                    <line x1="50" y1="40" x2="250" y2="40" stroke="var(--border-color)" stroke-width="0.5"/>
+                                    <line x1="50" y1="70" x2="250" y2="70" stroke="var(--border-color)" stroke-width="0.5"/>
+                                    <line x1="50" y1="100" x2="250" y2="100" stroke="var(--border-color)" stroke-width="0.5"/>
+                                    <!-- Biometric Face silhouette -->
+                                    <path d="M120 30 Q150 15 180 30 Q195 60 180 90 Q150 105 120 90 Q105 60 120 30 Z" fill="none" stroke="var(--border-color-hover)" stroke-width="1.5"/>
+                                    <path d="M135 45 Q150 40 165 45" fill="none" stroke="var(--accent-neon)" stroke-width="1"/>
+                                    <circle cx="138" cy="55" r="3" fill="var(--accent-neon)"/>
+                                    <circle cx="162" cy="55" r="3" fill="var(--accent-neon)"/>
+                                    <path d="M140 80 Q150 85 160 80" fill="none" stroke="var(--accent-neon)" stroke-width="1.5"/>
+                                    <!-- Scan Line -->
+                                    <line x1="90" y1="60" x2="210" y2="60" stroke="var(--accent-neon)" stroke-width="1.5"/>
+                                    <text x="215" y="63" fill="var(--accent-neon)" font-size="7" font-family="Space Grotesk">SCAN ACTIVE</text>
+                                    <text x="215" y="73" fill="var(--text-muted)" font-size="6" font-family="Space Grotesk">98.6% AUTHENTIC</text>
+                                </svg>
+                            </div>
                         </div>
-                        <div class="analysis-block pros">
-                            <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
-                            <p>Instantly isolates top-performing products and high-revenue regions, facilitating swift strategic adjustments for leadership.</p>
-                        </div>
-                        <div class="analysis-block cons">
-                            <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
-                            <p>Relies heavily on pre-structured historical batch data rather than real-time transactional streams.</p>
+                        
+                        <!-- Analysis Bento -->
+                        <div class="analysis-bento">
+                            <div class="analysis-block features">
+                                <span class="analysis-label">CORE FEATURES</span>
+                                <ul>
+                                    <li>Frame-by-frame deep learning analysis mapping face features</li>
+                                    <li>Authenticity percentage rendering & manipulation heatmap</li>
+                                    <li>Comprehensive metadata verification for injection logs</li>
+                                </ul>
+                            </div>
+                            <div class="analysis-block pros">
+                                <span class="analysis-label">PROS (ENGINEERED VALUE)</span>
+                                <p>High precision in identifying synthetic facial manipulations, generative AI alterations, and digital frame splices.</p>
+                            </div>
+                            <div class="analysis-block cons">
+                                <span class="analysis-label">CONS (LIMITATIONS FOR SCALE)</span>
+                                <p>Computationally heavy workflow, requiring GPU hardware optimization for fast real-time video stream inferences.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -256,41 +381,71 @@
     <section id="client-work" class="section-client-work">
         <div class="container">
             <div class="section-header">
-                <span class="subtitle-accent">DELIVERED CLIENT INTEGRATION</span>
-                <h2 class="section-title">CLIENT WORK SHOWCASE</h2>
+                <span class="subtitle-accent">DELIVERED CLIENT INTEGRATIONS & PROJECTS</span>
+                <h2 class="section-title">CLIENT DELIVERIES</h2>
             </div>
 
-            <div class="bento-grid client-bento">
-                <div class="bento-card client-showcase-card">
-                    <div class="client-badge">CLIENT: ANDREW</div>
-                    <div class="client-showcase-content">
+            <!-- Bento Client Grid -->
+            <div class="bento-grid client-bento-overhaul">
+                <!-- Client 1: Anirudh -->
+                <div class="bento-card client-project-card col-span-2">
+                    <div class="client-project-header">
+                        <span class="client-tag">CLIENT: ANIRUDH</span>
                         <h3>Gym Fitness Management System & Web Platform</h3>
-                        <p class="client-desc">
-                            Designed and developed a fully custom, highly aesthetic web platform optimized for user onboarding, fitness tracking workflows, and streamlined client membership management. Implemented high-conversion UI patterns to maximize membership sign-ups and optimize local conversion funnels.
-                        </p>
-                        <div class="client-metrics">
-                            <div class="metric-item">
-                                <span class="metric-val">100%</span>
-                                <span class="metric-lbl">Custom Code</span>
-                            </div>
-                            <div class="metric-item">
-                                <span class="metric-val">2.4x</span>
-                                <span class="metric-lbl">Conversion Increase</span>
-                            </div>
-                            <div class="metric-item">
-                                <span class="metric-val">MySQL</span>
-                                <span class="metric-lbl">Database Stack</span>
-                            </div>
-                        </div>
+                    </div>
+                    <p class="client-project-desc">
+                        Designed and developed a fully custom, highly aesthetic web platform optimized for user onboarding, fitness tracking workflows, and streamlined client membership management. Implemented high-conversion UI patterns to maximize membership sign-ups and optimize local conversion funnels.
+                    </p>
+                    <div class="client-project-meta">
+                        <span class="meta-pill">MySQL DATABASE</span>
+                        <span class="meta-pill">PYTHON AUTO-ETL</span>
+                        <span class="meta-pill">2.4X MEMBERSHIPS</span>
                     </div>
                 </div>
                 
-                <div class="bento-card client-cta-card">
-                    <div class="cta-inner">
-                        <i class="fas fa-handshake-angle cta-handshake-icon"></i>
-                        <h4>NEED SCALABLE DUAL-ENGINE GROWTH?</h4>
-                        <p>I build custom code solutions, design metrics dashboards, and set up tracking analytics that grow client businesses.</p>
-                        <a href="#contact" class="btn btn-primary">Start Project <i class="fas fa-envelope"></i></a>
+                <!-- Client 2: Aashil -->
+                <div class="bento-card client-project-card col-span-1">
+                    <div class="client-project-header">
+                        <span class="client-tag">CLIENT: AASHIL</span>
+                        <h3>Custom Client Application</h3>
+                    </div>
+                    <p class="client-project-desc">
+                        A dedicated custom application and web platform integrated from GitHub source code. Features sleek user dashboard modules, local system automation scripts, and custom landing conversions.
+                    </p>
+                    <div class="client-project-meta">
+                        <span class="meta-pill">VANILLA JS</span>
+                        <span class="meta-pill">GITHUB SYNCED</span>
+                    </div>
+                </div>
+
+                <!-- Client 3: Aashiq -->
+                <div class="bento-card client-project-card col-span-1">
+                    <div class="client-project-header">
+                        <span class="client-tag">CLIENT: AASHIQ</span>
+                        <h3>Custom Web Development Platform</h3>
+                    </div>
+                    <p class="client-project-desc">
+                        Custom interactive web portal built to present media, handle user subscriptions, and route intake data with high performance metrics.
+                    </p>
+                    <div class="client-project-meta">
+                        <span class="meta-pill">HTML5 / CSS3</span>
+                        <span class="meta-pill">AUTOMATED FORMS</span>
+                    </div>
+                </div>
+
+                <!-- Client 4: Team Wyse -->
+                <div class="bento-card client-project-card col-span-2">
+                    <div class="client-project-header">
+                        <span class="client-tag">CLIENT: TEAM WYSE</span>
+                        <h3>Official Corporate Web Platform</h3>
+                    </div>
+                    <p class="client-project-desc">
+                        Designed and engineered the official web presence for Team Wyse. Highlights business services, aggregates social media performance analytics, and displays clean, optimized user experiences.
+                    </p>
+                    <div class="client-project-meta">
+                        <span class="meta-pill">RESPONSIVE DESIGN</span>
+                        <span class="meta-pill">SEO OPTIMIZED</span>
+                        <span class="meta-pill">GA4 INTEGRATED</span>
                     </div>
                 </div>
             </div>

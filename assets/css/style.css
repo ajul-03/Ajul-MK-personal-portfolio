@@ -227,7 +227,7 @@ ul {
 }
 
 .hero-bento {
-    grid-template-columns: 1.3fr 0.7fr;
+    grid-template-columns: 0.7fr 1.3fr;
 }
 
 .bento-hero-main {
@@ -474,6 +474,18 @@ ul {
     box-shadow: 0 16px 40px rgba(0,0,0,0.5);
 }
 
+.project-card-layout-wrapper {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 40px;
+}
+
+.project-info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .project-analysis-header {
     display: flex;
     align-items: center;
@@ -499,35 +511,61 @@ ul {
 .proj-analysis-desc {
     font-size: 15px;
     color: var(--text-muted);
-    margin-bottom: 32px;
+    margin-bottom: 24px;
+}
+
+/* Stylized Visual Placeholders */
+.project-visual-container {
+    background-color: rgba(0, 0, 0, 0.3);
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 140px;
+    overflow: hidden;
+    position: relative;
+    transition: var(--transition-smooth);
+}
+
+.project-analysis-card:hover .project-visual-container {
+    border-color: var(--accent-neon);
+    background-color: rgba(0, 255, 135, 0.02);
+}
+
+.visual-svg {
+    width: 100%;
+    max-width: 280px;
+    height: auto;
 }
 
 .analysis-bento {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: 1fr;
+    gap: 16px;
 }
 
 .analysis-block {
     background-color: rgba(0, 0, 0, 0.2);
     border: 1px solid var(--border-color);
-    padding: 24px;
+    padding: 20px;
     border-radius: 8px;
 }
 
 .analysis-label {
-    font-size: 11px;
+    font-size: 10px;
     font-weight: 800;
     color: var(--text-dark);
     letter-spacing: 0.1em;
     display: block;
-    margin-bottom: 16px;
+    margin-bottom: 12px;
 }
 
 .analysis-block.features ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 8px;
 }
 
 .analysis-block.features li {
@@ -563,104 +601,80 @@ ul {
     font-weight: 700;
 }
 
-/* Client Work Bento Section */
+/* Client Deliveries Overhaul Section */
 .section-client-work {
     padding: 100px 0;
     border-bottom: 1px solid var(--border-color);
 }
 
-.client-bento {
-    grid-template-columns: 1.3fr 0.7fr;
+.client-bento-overhaul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
 }
 
-.client-showcase-card {
+.client-project-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 36px;
+    min-height: 280px;
 }
 
-.client-badge {
-    font-size: 10px;
-    font-weight: 700;
-    color: var(--accent-neon);
-    letter-spacing: 0.1em;
-    background-color: rgba(0,255,135,0.05);
-    border: 1px solid rgba(0,255,135,0.15);
-    padding: 6px 12px;
-    border-radius: 4px;
-    align-self: flex-start;
-    margin-bottom: 24px;
+.col-span-2 {
+    grid-column: span 2;
 }
 
-.client-showcase-card h3 {
-    font-size: 28px;
+.col-span-1 {
+    grid-column: span 1;
+}
+
+.client-project-header {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
     margin-bottom: 16px;
 }
 
-.client-desc {
-    color: var(--text-muted);
-    font-size: 15px;
-    margin-bottom: 32px;
-    max-width: 680px;
-}
-
-.client-metrics {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    border-top: 1px solid var(--border-color);
-    padding-top: 24px;
-}
-
-.metric-item {
-    display: flex;
-    flex-direction: column;
-}
-
-.metric-val {
-    font-size: 28px;
+.client-tag {
+    font-size: 10px;
     font-weight: 800;
-    color: var(--text-primary);
-    font-family: var(--font-heading);
+    color: var(--accent-neon);
+    letter-spacing: 0.1em;
 }
 
-.metric-lbl {
-    font-size: 11px;
-    color: var(--text-dark);
-    letter-spacing: 0.05em;
+.client-project-card h3 {
+    font-size: 22px;
     font-weight: 700;
 }
 
-.client-cta-card {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 48px;
-}
-
-.cta-inner {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.cta-handshake-icon {
-    font-size: 36px;
-    color: var(--accent-neon);
-    margin-bottom: 20px;
-}
-
-.client-cta-card h4 {
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    margin-bottom: 12px;
-}
-
-.client-cta-card p {
-    font-size: 13px;
+.client-project-desc {
+    font-size: 14px;
     color: var(--text-muted);
-    margin-bottom: 28px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+}
+
+.client-project-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-top: 1px solid var(--border-color);
+    padding-top: 16px;
+}
+
+.meta-pill {
+    font-size: 10px;
+    font-weight: 700;
+    color: var(--text-primary);
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--border-color);
+    padding: 4px 10px;
+    border-radius: 40px;
+}
+
+.client-project-card:hover .meta-pill {
+    border-color: var(--border-color-hover);
 }
 
 /* Dynamic GitHub Section */
@@ -945,14 +959,18 @@ ul {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .analysis-bento {
-        grid-template-columns: 1fr;
-        gap: 16px;
-    }
-
-    .client-bento {
+    .project-card-layout-wrapper {
         grid-template-columns: 1fr;
         gap: 24px;
+    }
+
+    .client-bento-overhaul {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .col-span-2, .col-span-1 {
+        grid-column: span 1;
     }
 
     .contact-bento {
@@ -1055,8 +1073,8 @@ ul {
         padding: 24px;
     }
 
-    .client-cta-card {
-        padding: 32px 24px;
+    .client-project-card {
+        padding: 24px;
     }
 
     .contact-form-card {
